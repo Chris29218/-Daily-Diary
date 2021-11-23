@@ -15,10 +15,10 @@ app.use(express.static('assets'));
 
 // DB
 // local database
-mongoose.connect('mongodb://localhost:27017/blogsDB');
+// mongoose.connect('mongodb://localhost:27017/blogsDB');
 
 // hosted database
-// mongoose.connect('mongodb+srv://admin-sky:test123@cluster0.mtqsh.mongodb.net/blogsDB');
+mongoose.connect('mongodb+srv://admin-sky:test123@cluster0.mtqsh.mongodb.net/blogsDB');
 
 // creating Schema
 const postSchema = new mongoose.Schema({
